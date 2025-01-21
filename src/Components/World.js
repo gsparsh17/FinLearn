@@ -174,7 +174,7 @@ function World() {
         </mesh>
       </Canvas>
 
-      <div
+      {/* <div
         style={{
           position: "absolute",
           top: 90,
@@ -191,7 +191,7 @@ function World() {
         <p>Arrow Left: Rotate Left</p>
         <p>Arrow Right: Rotate Right</p>
         <p>Space: Jump</p>
-      </div>
+      </div> */}
     </div>
   );
 }
