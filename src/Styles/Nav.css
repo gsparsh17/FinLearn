@@ -1,0 +1,74 @@
+/* Gaming-Themed Navbar */
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    width: 97%;
+    color: #ffd451;
+    font-family: "Orbitron", sans-serif; /* Gaming font */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); */
+    z-index: 1;
+  }
+  
+  .nav-status {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timer,
+  .money {
+    font-size: 18px;
+    margin: 5px 0;
+    text-shadow: 2px 2px 2px #00364d;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icon-wrapper {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 28px;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+    filter: drop-shadow(2px 2px 1px #00364d)
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(2px 2px 1px #ffd451);
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffd451;
+    color: #00364d;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateX(-50%) translateY(10px);
+  }
+  
+  .icon-wrapper:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+  }
+  
+  .icon-wrapper:hover .icon {
+    filter: drop-shadow(2px 2px 1px #ffd451);
+  }
+  

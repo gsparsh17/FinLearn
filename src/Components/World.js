@@ -177,7 +177,7 @@ function World() {
       <div
         style={{
           position: "absolute",
-          top: 20,
+          top: 90,
           left: 20,
           background: "rgba(0, 0, 0, 0.5)",
           padding: "10px",
