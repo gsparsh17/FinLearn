@@ -40,6 +40,36 @@
     transition: transform 0.3s, color 0.3s;
     filter: drop-shadow(2px 2px 1px #00364d)
   }
+  /* LoadingScreen.css */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Full black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-family: "Arial", sans-serif;
+    z-index: 9999; /* Ensure it's on top of everything */
+  }
+  
+  .loading-text {
+    animation: fadeIn 1s ease-in-out infinite alternate;
+  }
+  
+  /* Optional animation for the loading text */
+  @keyframes fadeIn {
+    from {
+      opacity: 0.7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   
   .icon:hover {
     transform: scale(1.2);
