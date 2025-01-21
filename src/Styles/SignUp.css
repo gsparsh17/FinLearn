@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+    position: relative;
+  }
+  
+  .bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../public/homebg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust the opacity of the background image */
+    z-index: -1; /* Send the background image behind the content */
+  }
+
+  .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 90%;
+    background: transparent;
+    max-width: 500px;
+    color: #ffd451;
+  }
+  .content h1{
+    color: #ffd451;
+  }
+  
